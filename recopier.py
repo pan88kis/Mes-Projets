@@ -115,3 +115,4 @@ else:
 # Ferme le navigateur après quelques secondes
 time.sleep(5)  # Attendre quelques secondes
 driver.quit()
+
