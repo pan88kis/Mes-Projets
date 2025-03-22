@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue sur notre application de messagerie</title>
+</head>
+<body>
+    <h1>Bienvenue sur notre application de messagerie !</h1>
+    <p>Merci de vous inscrire ou de vous connecter pour commencer à échanger des messages.</p>
+
+    <div>
+        <a href="{% url 'register' %}">S'inscrire</a> | 
+        <a href="{% url 'login' %}">Se connecter</a>
+    </div>
+</body>
+</html>

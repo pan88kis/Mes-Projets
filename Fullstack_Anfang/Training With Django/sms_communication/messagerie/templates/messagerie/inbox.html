@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boîte de Réception</title>
+    <style>
+        /* Style pour la boîte de dialogue défilante */
+        .messages {
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        /* Style pour la barre de recherche */
+        .search-bar {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boîte de Réception</h1>
+
+    <!-- Bouton de déconnexion -->
+    <a href="{% url 'logout' %}" class="logout-btn">Se déconnecter</a>
+    
+    <!-- Barre de recherche pour trouver un utilisateur -->
+    <form method="get" action="{% url 'inbox' %}">
+        <input type="text" name="search" class="search-bar" placeholder="Rechercher un utilisateur..." value="{{ request.GET.search }}">
+    </form>
+
+    <!-- Liste des utilisateurs trouvés selon la recherche -->
+    <h2>Utilisateurs</h2>
+    <ul>
+        {% for user in users %}
+            <li>
+                <a href="{% url 'envoyer_message' receiver_id=user.id %}">{{ user.username }}</a>
+            </li>
+        {% empty %}
+            <li>Aucun utilisateur trouvé.</li>
+        {% endfor %}
+    </ul>
+
+    <br>
+
+    <!-- Boîte de dialogue défilante pour afficher les messages reçus -->
+    <h2>Messages reçus</h2>
+    <div class="messages">
+        {% for message in messages_reçus %}
+            <div>
+                <strong>{{ message.sender.username }}</strong> : {{ message.content }} <small>({{ message.created_at }})</small>
+            </div>
+        {% empty %}
+            <p>Aucun message reçu.</p>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

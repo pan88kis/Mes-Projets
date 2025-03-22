@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envoyer un message à {{ receiver.username }}</title>
+    <style>
+        .messages {
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversation avec {{ receiver.username }}</h1>
+
+    <!-- Boîte de dialogue défilante pour afficher les messages -->
+    <div class="messages">
+        {% for message in messages %}
+            <div>
+                <strong>{{ message.sender.username }}</strong> : {{ message.content }} <small>({{ message.created_at }})</small>
+            </div>
+        {% empty %}
+            <p>Aucun message échangé.</p>
+        {% endfor %}
+    </div>
+
+    <!-- Formulaire pour envoyer un message -->
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="content" rows="4" cols="50"></textarea><br>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <br>
+    <a href="{% url 'inbox' %}">Retour à la boîte de réception</a>
+</body>
+</html>
