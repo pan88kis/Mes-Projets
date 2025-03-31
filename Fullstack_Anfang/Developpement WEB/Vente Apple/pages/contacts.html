@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>APPLE-Contacts</title>
+  </head>
+  <body>
+    <header>
+      <!-- Logo en haut à gauche -->
+      <a href="https://www.apple.com" target="_blank">
+        <img src="../media/images/logo.svg" alt="Logo" width="80">
+      </a>
+
+      <!-- Menu en bas du header, centré -->
+       <center>
+        <nav>
+          <p>
+              <a href="../acceuil.html">ACCUEIL</a>
+              <a href="service.html">NOS SERVICES</a> | 
+              <a href="galerie.html">GALERIE</a> | 
+              <b style="background-color: yellow;"><a href="contacts.html">CONTACTS</a></b>
+          </p>
+        </nav>
+       </center>
+      
+    </header>
+    <main>
+      <center>
+          <h1><strong>CONTACTEZ-NOUS</strong></h1>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua...</p>
+      </center>
+      
+      <table cellspacing="-10" cellpadding="-10" style="width: 100%; height: auto;">
+          <tr>
+              <!-- Vidéo à gauche -->
+              <td width="65%" align="center">
+                  <video width="600" controls style="width: 100%; height: 70%;">
+                      <source src="../media/videos/iPhone 12 Pro and iPhone 12 Pro Max.mp4" type="video/mp4">
+                      Votre navigateur ne supporte pas la lecture des vidéos.
+                  </video>
+              </td>
+              
+              <!-- Formulaire à droite -->
+              <td width="35%">
+                <form style="border: 0px solid black; padding: 10px; border-radius: 0px; width: 90%; height: 50%;">
+                  <fieldset style="border: 2px solid rgb(197, 197, 197); padding: 10px; border-radius: 0px;">
+                    <legend style="font-weight: bold; font-size: 18px; padding: 5px;">Formulaire de contact</legend>
+                    <label>Nom et Prénom(s):</label>
+                    <input type="text" placeholder="ex. Parfait K1NG"><br><br>
+                    
+                    <label>Adresse E-mail:</label>
+                    <input type="email" placeholder="ex. academy@parfaitteam.com"><br><br>
+                    
+                    <label>Mot de passe:</label>
+                    <input type="password"><br><br>
+                    
+                    <label>Date de naissance:</label>
+                    <input type="date"><br><br>
+                    
+                    <label>Genre:</label>
+                    <select>
+                        <option>Ne pas préciser</option>
+                        <option>Homme</option>
+                        <option>Femme</option>
+                    </select>
+                    
+                    <label>Couleur Préférée:</label>
+                    <input type="color" value="#4B0082"><br><br>
+                    
+                    <label>Niveau de connaissances en informatique:</label>
+                    <input type="range" min="0" max="100"><br><br>
+                    
+                    <textarea placeholder="Votre message ici" style="width: 100%; height: 90px;"></textarea><br><br>
+                    
+                    <button type="reset">Réinitialiser</button>
+                    <button type="submit">Valider</button>
+                  </form>
+                </div>
+              </td>
+          </tr>
+      </table>
+  </main>
+    <footer>
+      <hr style="border: 0.25px solid #d3d3d3; margin: 20px 1;">
+      <p>&copy; copyright APPLE <sup>&reg;</sup> 2021 - Tous droits réservés (Made by Parfait)</p>
+    </footer>
+  </body>
+</html>
