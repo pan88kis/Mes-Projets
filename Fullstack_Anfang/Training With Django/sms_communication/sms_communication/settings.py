@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$j&s4mjt%er02t!yw9s+5v+)3kna(3shv^6c!9a0)9f$mc+!%i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.0.102','92.50.108.186']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.0.102','92.50.108.186', "sms-basis-by-parf.onrender.com"]
 
 
 # Application definition
