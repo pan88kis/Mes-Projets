@@ -13,4 +13,5 @@ Hier befinden Sich mein CV in Form von Webseite und hier ist das deployment : ht
 Hier ist ein Mini Apple-Laden und hier ist das deployment : https://vente-apple.onrender.com/
 
 # Fullstack_Anfang/Training With Django
-Hier ist einfache Web-basierte App zum Nachrichtenaustausch
+Hier ist einfache Web-basierte App zum Nachrichtenaustausch :
+    und hier ist das deployment: https://sms-basis-by-parf.onrender.com
