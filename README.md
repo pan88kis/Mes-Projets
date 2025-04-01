@@ -10,7 +10,7 @@ Requirements : Chrome und Windows
 Hier befinden Sich mein CV in Form von Webseite und hier ist das deployment : https://fonkou-tinbo.onrender.com
 
 # Fullstack_Anfang/Developpement WEB/Vente Apple
-Hier ist ein Mini Apple-Laden
+Hier ist ein Mini Apple-Laden und hier ist das deployment : https://vente-apple.onrender.com/
 
 # Fullstack_Anfang/Training With Django
 Hier ist einfache Web-basierte App zum Nachrichtenaustausch
