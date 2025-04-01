@@ -7,7 +7,7 @@ Das liest automatish Videos. Sie können die Anzahl von Abläufe eingeben.
 Requirements : Chrome und Windows
 
 # Fullstack_Anfang/Developpement WEB/_My CV in HTML_
-Hier befinden Sich mein CV in Form von Webseite
+Hier befinden Sich mein CV in Form von Webseite und hier ist das deployment : https://fonkou-tinbo.onrender.com
 
 # Fullstack_Anfang/Developpement WEB/Vente Apple
 Hier ist ein Mini Apple-Laden
